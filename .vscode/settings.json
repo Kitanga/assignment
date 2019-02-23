@@ -3,7 +3,8 @@
         ".vscode/**",
         "**/*.scss",
         "**/*.sass",
-        "**/*.ts",
-        "src/**"
-    ]
+        "**/*.ts"
+    ],
+    "liveServer.settings.wait": 700,
+    "liveServer.settings.root": "/public"
 }

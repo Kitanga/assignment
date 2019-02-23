@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development --output ./public/js/main.js -w --module-bind js=babel-loader",
+    "build": "webpack --mode production --output ./public/js/main.js --module-bind js=babel-loader"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +14,14 @@
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
-    "babel-loader": "^8.0.5"
+    "@types/pixi.js": "^4.8.6",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^17.3.0",
+    "pixi-tween": "^0.2.0",
+    "pixi.js": "4.8.6"
   }
 }

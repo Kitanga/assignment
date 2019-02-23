@@ -74,11 +74,9 @@ function startAnimation() {
 
         // Now to move the card to the right hand side of the screen
         tween.from({
-            x: 0,
-            y: card.y
+            x: 0
         }).to({
-            x: window.innerWidth - card.width,
-            y: card.y
+            x: window.innerWidth - card.width
         });
         tween.time = 2000;
         tween.delay = delayMultiplier * 1000;
